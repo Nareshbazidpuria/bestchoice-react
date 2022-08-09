@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/bestchoice-react/static/css/main.95bff52d.css",
-    "main.js": "/bestchoice-react/static/js/main.def7125d.js",
+    "main.js": "/bestchoice-react/static/js/main.76b9e980.js",
     "static/js/787.53684450.chunk.js": "/bestchoice-react/static/js/787.53684450.chunk.js",
     "static/media/s4.jpg": "/bestchoice-react/static/media/s4.5eea3b010c6d1dca33a9.jpg",
     "static/media/bg.jpg": "/bestchoice-react/static/media/bg.2476f6ef3f7b37db1c6f.jpg",
@@ -13,11 +13,11 @@
     "static/media/pp2.jpg": "/bestchoice-react/static/media/pp2.b3ede9b8788bbb1d164a.jpg",
     "index.html": "/bestchoice-react/index.html",
     "main.95bff52d.css.map": "/bestchoice-react/static/css/main.95bff52d.css.map",
-    "main.def7125d.js.map": "/bestchoice-react/static/js/main.def7125d.js.map",
+    "main.76b9e980.js.map": "/bestchoice-react/static/js/main.76b9e980.js.map",
     "787.53684450.chunk.js.map": "/bestchoice-react/static/js/787.53684450.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.95bff52d.css",
-    "static/js/main.def7125d.js"
+    "static/js/main.76b9e980.js"
   ]
 }
