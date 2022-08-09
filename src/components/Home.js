@@ -48,12 +48,14 @@ const Home = () => {
     }
 
     function deletElement() {
-        navSec.remove();
-        divNavUser.remove();
-        inavuser.remove();
-        spanTagUsrnm.remove();
-        logout.remove();
-        document.getElementById('yourAccount').remove();
+        if(!login){
+            navSec.remove();
+            divNavUser.remove();
+            inavuser.remove();
+            spanTagUsrnm.remove();
+            logout.remove();
+            document.getElementById('yourAccount').remove();
+        }
     };
 
     const burgrFunc = () => {
@@ -88,7 +90,7 @@ const Home = () => {
             navLeftDiv.style.display = 'none';
             navSec.classList.remove('navSec');
             spanTagUsrnm.innerHTML = userName;
-            login.remove();
+            login ? login.remove() : console.log('');
         }
         else {
             deletElement()
@@ -382,7 +384,7 @@ const Home = () => {
                     </div>
                     <div>
                         <p>
-                            Copyright &copy; <span id="yr"></span> All Rights Reserved
+                            Copyright &copy; <span id="yr">2022</span> All Rights Reserved
                         </p>
                     </div>
                 </footer>

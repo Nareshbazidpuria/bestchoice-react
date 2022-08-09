@@ -22,39 +22,9 @@
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
-<body onload="onloadf()">
+<body>
   <noscript>You need to enable JavaScript to run this app.</noscript>
   <div id="root"></div>
-  <script>
-    const onloadf = () => {
-      let spanTagUsrnm = document.getElementById('usrnm');
-      let spanTagYear = document.getElementById('yr');
-      let date = new Date();
-      let navLeftDiv = document.getElementById('navLeftDiv');
-      let rightNav = document.querySelector('.r');
-      let menuItems = document.getElementById('menuItems');
-      let logout = document.getElementById('logout');
-      let login = document.getElementById('logIn');
-      let userName = localStorage.getItem('userName');
-      let navSec = document.getElementById('navSec');
-      let menuBtn = document.getElementById('menuBtn');
-      let menuBtnIcon = document.getElementById('mbicon');
-      let divNavUser = document.getElementById('navUser');
-      let inavuser = document.getElementById('navuser');
-      let burger = document.getElementById('burger');
-      let line = document.getElementsByClassName('line');
-      let mi = document.getElementById('mitm');
-      spanTagYear.innerHTML = date.getFullYear();
-      function deletElement() {
-        navSec.remove();
-        divNavUser.remove();
-        inavuser.remove();
-        spanTagUsrnm.remove();
-        logout.remove();
-        document.getElementById('yourAccount').remove();
-      };
-    }
-  </script>
 </body>
 
 </html>
