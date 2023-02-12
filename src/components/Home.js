@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from "react-router-dom";
 import s1 from '../img/s1.jpg'
 import s2 from '../img/s2.jpeg'
@@ -22,7 +22,7 @@ const Home = () => {
     let login;
     let navLeftDiv;
     let userName;
-    setTimeout(() => {
+    useEffect(() => {
         rightNav = document.querySelector('.r');
         menuItems = document.getElementById('menuItems');
         logout = document.getElementById('logout');
@@ -35,7 +35,7 @@ const Home = () => {
         navLeftDiv = document.getElementById('navLeftDiv');
         userName = localStorage.getItem('userName');
         line = document.getElementsByClassName('line');
-    }, 1000);
+    }, [])
 
     const logOutFunc = () => {
         localStorage.removeItem('userName');
