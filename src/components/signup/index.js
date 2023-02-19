@@ -5,6 +5,7 @@ import { signUpApi } from '../../api/auth';
 import './style.css'
 
 const Signup = () => {
+    const navigate = useNavigate();
     useEffect(() => {
         const fetchData = async () => {
             const user = localStorage.getItem('user')
@@ -13,8 +14,7 @@ const Signup = () => {
             }
         }
         fetchData()
-    }, [])
-    const navigate = useNavigate();
+    }, [navigate])
     const [messageApi, contextHolder] = message.useMessage();
     const [isLoading, setLoading] = useState(false);
     const onFinish = async (values) => {

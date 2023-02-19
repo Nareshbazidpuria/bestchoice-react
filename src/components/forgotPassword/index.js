@@ -5,16 +5,16 @@ import { getProfileApi, loginApi } from '../../api/auth';
 import './style.css'
 
 const ForgotPassword = () => {
-  // useEffect(() => {
-  //   const fetchData = async () => {
-  //     const user = localStorage.getItem('user')
-  //     if (user) {
-  //       navigate('/')
-  //     }
-  //   }
-  //   fetchData()
-  // }, [])
   const navigate = useNavigate();
+  useEffect(() => {
+    const fetchData = async () => {
+      const user = localStorage.getItem('user')
+      if (user) {
+        navigate('/')
+      }
+    }
+    fetchData()
+  }, [navigate])
   const [messageApi, contextHolder] = message.useMessage();
   const [isLoading, setLoading] = useState(false);
   const onFinish = async (values) => {
