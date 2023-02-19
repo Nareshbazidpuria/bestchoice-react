@@ -454,18 +454,23 @@ const App = () => {
                 top: 0,
                 background: colorBgContainer,
             }} >
-                <div className='df jcc aic'
+                <div className='df aic'
                     style={{
-                        color: 'var(--primary)',
-                        letterSpacing: 3,
                         fontSize: 18,
                         height: 32,
-                        margin: 16,
+                        margin: 14,
                         background: colorBgContainer,
-                        transition: '1s ease'
                     }}
                 >
-                    {collapsed ? 'BC' : 'Best Choice'}
+                    <div style={{
+                        padding: '0 1rem',
+                        fontSize: 24
+                    }}>
+                        {React.createElement(collapsed ? MenuUnfoldOutlined : MenuFoldOutlined, {
+                            className: 'trigger',
+                            onClick: () => setCollapsed(!collapsed),
+                        })}
+                    </div>
                 </div>
                 <Menu theme="light" defaultSelectedKeys={['1']} mode="inline" items={items} />
             </Sider>
@@ -480,14 +485,16 @@ const App = () => {
                     }}
                 >
                     <div style={{
-                        padding: '0 1rem',
-                        fontSize: 24
+                        color: 'var(--primary)',
+                        letterSpacing: 3,
+                        fontSize: 18,
+                        height: 32,
+                        margin: '0 1rem',
+                        background: colorBgContainer,
                     }}>
-                        {React.createElement(collapsed ? MenuUnfoldOutlined : MenuFoldOutlined, {
-                            className: 'trigger',
-                            onClick: () => setCollapsed(!collapsed),
-                        })}
+                        Best Choice
                     </div>
+
                 </Header>
                 <Content
                     style={{
@@ -517,7 +524,7 @@ const App = () => {
                         textAlign: 'center',
                     }}
                 >
-                    Ant Design ©2023 Created by Ant UED
+                    Best Choice ©{new Date().getFullYear()} All Rights Reserved.
                 </Footer>
             </Layout>
         </Layout>
