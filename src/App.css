@@ -91,6 +91,10 @@
     padding: 3rem !important
 }
 
+.ant-layout-sider-trigger {
+    display: none !important;
+}
+
 
 
 
