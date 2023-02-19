@@ -1,3 +1,104 @@
+:root {
+    --primary: #ee5684;
+    --background: #d6ebff;
+}
+
+.df {
+    display: flex !important;
+}
+
+.fdc {
+    flex-direction: column !important;
+}
+
+.jcc {
+    justify-content: center !important;
+}
+
+.aic {
+    align-items: center !important;
+}
+
+.mx-1 {
+    margin: 1rem 0 !important
+}
+
+.mx-2 {
+    margin: 2rem 0 !important
+}
+
+.mx-3 {
+    margin: 3rem 0 !important
+}
+
+.my-1 {
+    margin: 0 1rem !important
+}
+
+.my-2 {
+    margin: 0 2rem !important
+}
+
+.my-3 {
+    margin: 0 3rem !important
+}
+
+.m-1 {
+    margin: 1rem !important
+}
+
+.m-2 {
+    margin: 2rem !important
+}
+
+.m-3 {
+    margin: 3rem !important
+}
+
+.px-1 {
+    padding: 1rem 0 !important
+}
+
+.px-2 {
+    padding: 2rem 0 !important
+}
+
+.px-3 {
+    padding: 3rem 0 !important
+}
+
+.py-1 {
+    padding: 0 1rem !important
+}
+
+.py-2 {
+    padding: 0 2rem !important
+}
+
+.py-3 {
+    padding: 0 3rem !important
+}
+
+.p-1 {
+    padding: 1rem !important
+}
+
+.p-2 {
+    padding: 2rem !important
+}
+
+.p-3 {
+    padding: 3rem !important
+}
+
+
+
+
+
+
+
+
+
 @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=IBM+Plex+Sans+Thai+Looped&family=Jost&family=Roboto:wght@300&family=Source+Sans+Pro&display=swap');
 
 * {
@@ -11,11 +112,11 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-:root {
+/* :root {
     --primary: indianred;
     --secondary: rgba(15, 10, 29, 0.849);
     --light: #2f3640;
-}
+} */
 
 .nav1 {
     position: sticky;
@@ -53,7 +154,7 @@ body {
     justify-content: center;
 }
 
-#burger{
+#burger {
     width: 32px;
     height: 32px;
     margin: 0 20px;
@@ -61,12 +162,14 @@ body {
     cursor: pointer;
     transition: 0.5s ease-in-out;
 }
-.burger{
+
+.burger {
     transform: translateX(300px);
     box-shadow: 12px 0 3px rgba(255, 255, 255, 0.61), -12px 0 3px rgba(255, 255, 255, 0.61);
     background-color: rgba(255, 255, 255, 0.61);
 }
-#burger .line{
+
+#burger .line {
     width: 32px;
     height: 1px;
     background-color: black;
@@ -74,10 +177,12 @@ body {
     border-radius: 3px;
     transition: 0.5s ease-in-out;
 }
-.l-1{
+
+.l-1 {
     transform: translateY(10px) rotate(45deg);
 }
-.l-3{
+
+.l-3 {
     transform: translateY(-7px) rotate(-45deg);
 }
 
@@ -158,6 +263,7 @@ body {
     cursor: pointer;
     align-items: center;
 }
+
 ol, ul {
     padding-left: 0rem;
 }

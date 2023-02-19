@@ -1,0 +1,22 @@
+.box {
+  background-color: var(--background);
+  height: calc(max(100vh, 40rem));
+}
+
+.signUpCard {
+  background-color: #fff;
+  border-radius: .4rem;
+}
+
+.signUpCard h3 {
+  color: var(--primary);
+}
+
+Form {
+  width: calc(max(20vw, 20rem));
+}
+
+.registerBtn {
+  background-color: var(--primary);
+  width: 100%;
+}
